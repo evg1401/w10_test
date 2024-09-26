@@ -5,11 +5,11 @@ const Page = () => {
     return (
 
         <div>
-            <div className="my-4">
+            <div className="xl:my-4 lg:my-4 md:my-4 sm:my-2">
                 <AnalyticHeader />
             </div>
 
-            <div className="my-4">
+            <div className="xl:my-4 lg:my-4 md:my-4 sm:my-1">
                 <AnalyticWrapper />
             </div>
         </div>

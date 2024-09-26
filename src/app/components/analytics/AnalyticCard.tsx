@@ -42,26 +42,26 @@ const AnalyticCard = ({ data }: Props) => {
     const AnalyticItems = () => planAnalyticsList.map((x, i) => {
         if (x.day) {
             return (
-                <div key={i} className="p-4">
+                <div key={i} className="xl:p-4 lg:p-4 md:p-4 sm:py-0">
                     <AnalyticItem title="за день" keyValue={'day_plan'} count={x.day.count} sum={x.day?.sum} plan={x.day?.plan} submitAnalytics={onSubmitAnalytics} />
                 </div>)
         }
         else if (x.week) {
             return (
-                <div key={i} className="p-4">
+                <div key={i} className="xl:p-4 lg:p-4 md:p-4 sm:py-0">
                     <AnalyticItem title="за неделю" keyValue={'week_plan'} count={x.week?.count} sum={x.week?.sum} plan={x.week?.plan} submitAnalytics={onSubmitAnalytics} />
                 </div>)
         }
         else if (x.month) {
             return (
-                <div key={i} className="p-4">
+                <div key={i} className="xl:p-4 lg:p-4 md:p-4 sm:py-0">
                     <AnalyticItem title="за месяц" keyValue={'month_plan'} count={x.month?.count} sum={x.month?.sum} plan={x.month?.plan} submitAnalytics={onSubmitAnalytics} />
                 </div>)
         }
     })
 
     return (
-        <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  gap-4">
+        <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
             <AnalyticItems />
         </div>
     )

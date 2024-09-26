@@ -25,14 +25,14 @@ const AnalyticItem = ({ ...props }: Props) => {
     return (
         <div>
             <div className="mb-2">
-                <div className='font-semibold text-4xl'>{props.title}</div>
+                <div className='font-semibold xl:text-4xl lg:text-4xl md:text-4xl mx-1'>{props.title}</div>
             </div>
 
             <Card className="shadow-md">
                 <CardContent className='flex flex-col justify-between'>
                     <div className="flex flex-col mb-4">
-                        <div className="font-semibold text-3xl mb-2">{props.count} заявки</div>
-                        <div className="font-semibold text-3xl">{moneyFormat(props.sum.toString()).split(',')[0]} ₽</div>
+                        <div className="font-semibold xl:text-3xl lg:text-3xl md:text-3xl mb-2">{props.count} заявки</div>
+                        <div className="font-semibold xl:text-3xl lg:text-3xl md:text-3xl">{moneyFormat(props.sum.toString()).split(',')[0]} ₽</div>
                     </div>
 
                     <div className="flex items-center mb-2">

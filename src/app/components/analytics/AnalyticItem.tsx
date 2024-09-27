@@ -56,7 +56,7 @@ const AnalyticItem = ({ ...props }: Props) => {
                             <div className="text-primary font-bold text-xl">{props.count} заявки</div>
                         </div>
 
-                        <div className="text-secondary text-xs">
+                        <div className="text-secondary-foreground text-xs">
                             {percent.current + percent.over}%
                         </div>
                     </div>

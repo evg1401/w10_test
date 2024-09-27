@@ -8,7 +8,7 @@ const AnalyticHeader = () => {
             <Card className="w-full h-14">
                 <CardContent className='flex justify-between items-center pt-2'>
                     <div className="flex items-center">
-                        <div className='text-primary font-semibold xl:text-3xl lg:text-3xl md:text-3xl'>WT10 &nbsp; </div> <h1 className='text-secondary xl:text-3xl lg:text-3xl md:text-3xl'>APPLICATION ANALYTICS</h1>
+                        <div className='text-primary font-semibold xl:text-3xl lg:text-3xl md:text-3xl'>WT10 &nbsp; </div> <h1 className='text-secondary-foreground xl:text-3xl lg:text-3xl md:text-3xl'>APPLICATION ANALYTICS</h1>
                     </div>
 
                     <Image
